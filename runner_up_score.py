@@ -6,6 +6,11 @@ if __name__ == '__main__':
     second_max=-100
     for i in arr1:
         if i>max_num:
+            if second_max<max_num:
+                second_max=max_num
+            else:
+                max_num=i
+        else:
             max_num=i
 
-    print(max_num)
+    print(second_max)
